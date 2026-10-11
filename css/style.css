@@ -1,6 +1,6 @@
 /* CSS เพิ่มเติมสำหรับหน้า Blue Flag (นอกเหนือจาก Bootstrap) */
 :root {
-    --sky: #1f6fb2;
+    --sky: #1b6f9f;
     --sky-deep: #14507f;
     --sky-soft: #e8f1f9;
     --ink: #22303c;
@@ -75,7 +75,7 @@ section {
 }
 
 .taichirun {
-     display: block;
+    display: block;
 
     width: 300px !important;
     height: auto !important;
@@ -95,7 +95,7 @@ section {
 }
 
 .quote-box {
-     width: 350px;
+    width: 350px;
     padding: 100px 30px;
     border: 2px solid #333;
     text-align: center;
@@ -136,6 +136,13 @@ section {
     object-fit: cover;
     border: 2px solid var(--ink);
     background: #ddd;
+}
+
+.fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
 }
 
 /* ----- แถบ Comics เลื่อนซ้าย-ขวา (8 รูปในบาร์เดียว) ----- */
@@ -198,3 +205,470 @@ footer {
     background: var(--sky-deep);
     color: #fff;
 }
+
+
+/* ===== WHAT YOU WILL GAIN ===== */
+
+/* พื้นหลังสีฟ้าเต็มจอ */
+#gain.blue-band {
+    width: 100%;
+    height: fit-content;
+    background-color: #1b6f9f;
+    padding: 40px 0;
+    margin: 0;
+}
+
+/* จัดเนื้อหาให้อยู่ตรงกลางจอ */
+#gain .gain-layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr) 90px;
+    align-items: center;
+    gap: 22px;
+}
+
+
+/* หัวข้อด้านซ้าย */
+#gain .gain-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    height: 100%;
+    color: #ffe3a3;
+}
+
+/* ชื่อเรื่องแนวตั้ง */
+#gain .gain-heading h2 {
+    writing-mode: vertical-rl;
+    font-size: clamp(20px, 2.5vw, 32px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* คำอธิบายด้านซ้าย */
+#gain .gain-subtitle {
+    writing-mode: vertical-rl;
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+* พื้นที่รูปภาพด้านหลังกล่องข้อความ */ #gain .gain-content {
+    position: relative;
+    min-width: 0;
+    min-height: 490px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 6%;
+
+    /* เปลี่ยนเป็นชื่อไฟล์รูปภาพจริงของเธอ */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.40),
+            rgba(255, 255, 255, 0.40)),
+        url("images/triosunset.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* กล่องข้อความอยู่ด้านหน้ารูปภาพ */
+#gain .gain-cards {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+/* กล่องข้อความสีขาว */
+#gain .gain-card {
+    width: 100%;
+    min-height: 72px;
+    padding: 12px 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    border: 2px solid #111;
+    border-radius: 25px;
+
+    text-align: center;
+    color: #85817e;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+}
+
+/* หัวข้อในแต่ละกล่อง */
+#gain .gain-card strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* รายละเอียดในแต่ละกล่อง */
+#gain .gain-card p {
+    margin: 0;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+/* ข้อความญี่ปุ่นด้านขวา */
+#gain .gain-japanese {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffe3a3;
+    font-size: clamp(22px, 2.5vw, 34px);
+    letter-spacing: 4px;
+    white-space: nowrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #gain.blue-band {
+        padding: 30px 0;
+    }
+
+    #gain .gain-layout {
+        width: 94%;
+        grid-template-columns: 42px minmax(0, 1fr) 32px;
+        gap: 10px;
+    }
+
+    #gain .gain-content {
+        min-height: 430px;
+        padding: 25px 10px;
+    }
+
+    #gain .gain-cards {
+        gap: 18px;
+    }
+
+    #gain .gain-card {
+        min-height: 75px;
+        padding: 10px 8px;
+        border-radius: 20px;
+    }
+
+    #gain .gain-card strong {
+        font-size: 12px;
+    }
+
+    #gain .gain-card p {
+        font-size: 11px;
+    }
+
+    #gain .gain-heading {
+        gap: 6px;
+    }
+
+    #gain .gain-heading h2 {
+        font-size: 17px;
+    }
+
+    #gain .gain-subtitle {
+        font-size: 10px;
+    }
+
+    #gain .gain-japanese {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+/* มือถือจอเล็ก */
+@media (max-width: 480px) {
+    #gain .gain-layout {
+        grid-template-columns: 30px minmax(0, 1fr) 24px;
+        gap: 6px;
+    }
+
+    #gain .gain-content {
+        min-height: 400px;
+        padding: 20px 6px;
+    }
+
+    #gain .gain-cards {
+        gap: 14px;
+    }
+
+    #gain .gain-card {
+        padding: 10px 5px;
+        border-radius: 16px;
+    }
+
+    #gain .gain-heading h2 {
+        font-size: 14px;
+    }
+
+    #gain .gain-subtitle {
+        font-size: 9px;
+    }
+
+    #gain .gain-japanese {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+/* พื้นที่ภาพและกล่องข้อความ */
+#gain .gain-content {
+    position: relative;
+    isolation: isolate;
+    min-width: 0;
+    min-height: 490px;
+    padding: 40px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ภาพพื้นหลังแยกชั้นจากกล่องข้อความ */
+#gain .gain-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.35)),
+        url("../images/triosunset.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* กล่องข้อความทั้ง 4 กล่อง */
+#gain .gain-cards {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+/* รูปแบบกล่องข้อความ */
+#gain .gain-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 72px;
+    padding: 12px 14px;
+
+    background-color: #fff;
+    border: 2px solid #111;
+    border-radius: 25px;
+
+    box-sizing: border-box;
+    text-align: center;
+    color: #85817e;
+    line-height: 1.6;
+}
+
+#gain .gain-card strong {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#gain .gain-card p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.fixed-image {
+    position: fixed;
+    /* ทำให้ภาพติดอยู่กับหน้าจอ */
+    top: 20px;
+    /* ระยะจากด้านบนของหน้าจอ */
+    right: 20px;
+    /* ระยะจากด้านขวาของหน้าจอ */
+    width: 150px;
+    /* ขนาดภาพ */
+    z-index: 1000;
+    /* ให้อยู่เหนือองค์ประกอบอื่น */
+}
+
+
+.learn-section {
+  background: white;
+}
+
+/* เรียงกรอบลงมาแนวตั้ง ความสูงของแต่ละกรอบมาจากเนื้อหาข้างใน */
+.webtoon {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;                 /* ระยะห่างระหว่างกรอบ */
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* กรอบรูป: ขนาดเท่ารูปจริง ไม่ครอป */
+.panel {
+  margin: 0;
+  background: #fff;
+  border: 2px solid #222;
+  line-height: 0;              /* กันช่องว่างใต้รูปที่ทำให้กรอบสูงเกินรูป */
+}
+.panel img {
+  display: block;
+  width: 100%;
+  height: auto;                /* คงสัดส่วนเดิม ไม่ใช้ object-fit */
+}
+
+/* กรอบข้อความ */
+.panel-text {
+  line-height: 1.9;
+  padding: 2.5rem 2.75rem;     /* ช่องว่างระหว่างขอบกับตัวหนังสือ */
+}
+.panel-text p {
+  margin: 0;
+  font-size: .95rem;
+  text-align: center;
+}
+
+/* ตำแหน่ง + ความกว้าง (ปรับ % และ margin เพื่อให้เหลื่อมตามต้องการ) */
+.panel-a    { order: 1; width: 58%; align-self: flex-end; }                         /* รูปแนวนอน ชิดขวา */
+.panel-text { order: 2; width: 66%; align-self: flex-start; margin-top: 3 rem; }  /* ซ้อนเหลื่อมขึ้นไปหารูปบน */
+.panel-c    { order: 3; width: 36%; align-self: flex-end; margin-right: 3%; }       /* รูปล่างขวา */
+.panel-b    { order: 4; width: 46%; align-self: flex-start; margin-left: 6%; margin-top: -4rem; } /* รูปล่างซ้าย ดันขึ้นให้เหลื่อมกับรูปขวา */
+
+/* มือถือ */
+@media (max-width: 767.98px) {
+  .webtoon { gap: 1.5rem; }
+  .panel-a, .panel-c { width: 85%; margin-right: 0; }
+  .panel-b           { width: 85%; margin-left: 0; margin-top: 0; }
+  .panel-text        { width: 100%; margin-top: 0; padding: 1.5rem; }
+}
+
+
+/*font*/
+
+.bai-jamjuree-regular {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mali-regular {
+  font-family: "Mali", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*loading*/
+
+/* ล็อกการเลื่อนหน้าจอระหว่างโหลด */
+body.is-loading {
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background: linear-gradient(to bottom,#d3e8f9 0% ,#ffffff 100% );  /* ขาว → ฟ้า */
+  color: #000000;  
+  transition: transform .9s cubic-bezier(.76, 0, .24, 1);
+}
+
+/* ม่านเลื่อนขึ้นเมื่อโหลดเสร็จ */
+.loader.is-done {
+  transform: translateY(-100%);
+}
+
+.loader__inner {
+  width: min(80%, 420px);
+  text-align: center;
+  transition: opacity .4s ease;
+}
+.loader.is-done .loader__inner {
+  opacity: 0;
+}
+
+.loader__title {
+  margin: 0;
+  font-family: 'Schoolbell', cursive;
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
+  letter-spacing: .3em;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: loaderFadeUp .8s .2s ease forwards;
+}
+
+/* เส้นโหลด */
+.loader__bar {
+  height: 2px;
+  margin: 1.5rem 0 .75rem;
+  background: rgba(11, 74, 122, .2);
+  overflow: hidden;
+}
+.loader__bar span {
+  display: block;
+  height: 100%;
+  background: #0b4a7a;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.loader__count {
+  margin: 0;
+  font-variant-numeric: tabular-nums;  /* ตัวเลขกว้างเท่ากัน ไม่สั่น */
+  letter-spacing: .1em;
+}
+
+@keyframes loaderFadeUp {
+  to { opacity: 1; transform: none; }
+}
+
+/* คนที่ตั้งค่าลดการเคลื่อนไหวในระบบ */
+@media (prefers-reduced-motion: reduce) {
+  .loader, .loader__inner { transition-duration: .01s; }
+  .loader__title { animation-duration: .01s; }
+}
+
+html {
+  font-size: clamp(14px, 1.2vw + 10px, 18px);
+}
+

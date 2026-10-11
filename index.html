@@ -5,22 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blue Flag | วัยฝัน วันฟ้าคราม</title>
+    <link rel="stylesheet" href="css/loader.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Shippori+Mincho:wght@600&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Schoolbell&display=swap"
+        rel="stylesheet">
+
     <!-- CSS ของเราเอง (แยกไฟล์) -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+    <body class="is-loading">
+
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <h1 class="loader__title">BLUE FLAG</h1>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+      <p class="loader__count"><span id="loaderNum">0</span>%</p>
+    </div>
+  </div>
 
     <!-- 1) NAVIGATION: คลิกแล้วเลื่อนไปยัง section ตาม id -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand brand-jp" href="#introduction">ABSOLUTE PEAK</a>
+            <a class="navbar-brand brand-jp schoolbell-regular" href="#introduction">ABSOLUTE PEAK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                 aria-label="เมนู">
                 <span class="navbar-toggler-icon"></span>
@@ -51,18 +68,19 @@
             <br>
             <br>
             <div class="mt-2">
-                <h1 class=" h4 sec-title mt-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                <h1 class=" h4 sec-title mt-4 bai-jamjuree-regular " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
                     ไม่ว่าจะเลือกเส้นทางไหน ธงสีฟ้าผืนนี้ก็ยังคงโบกสะบัดต่อไป
                 </h1>
-                <p class="containerlead mx-auto mt-4" style="max-width:720px" data-aos="fade-down"
+                <p class="containerlead mx-auto mt-4 bai-jamjuree-regular" style="max-width:720px " data-aos="fade-down"
                     data-aos-easing="linear" data-aos-duration="2000">
                     ช่วงวัยรุ่นอาจเป็นหนึ่งในช่วงเวลา
-                    ที่มีการเปลี่ยนแปลงมากที่สุด<br>
-                    เพราะเป็นช่วงรอยต่อระหว่างการเป็นเด็กกับการก้าวเข้าสู่ความเป็นผู้ใหญ่<br>
+                    ที่พบเจอกับการเปลี่ยนผ่านของชีวิตมากที่สุด<br>
+                    เพราะเป็นช่วงรอยต่อระหว่างความเป็นเด็กกับการก้าวเข้าสู่ความเป็นผู้ใหญ่<br>
                     หลายสิ่งที่เคยเรียบง่ายเริ่มซับซ้อนขึ้น ทั้งความรัก <br>
                     ความฝัน ความสัมพันธ์กับเพื่อน<br>
-                    รวมถึงการตั้งคำถามเกี่ยวกับอนาคตที่เราต้องตัดสินใจด้วยตัวเองมากขึ้น<br>
-                    ในขณะเดียวกันก็ต้องเรียนรู้ที่จะยอมรับว่าบางสิ่งไม่อาจเป็นไปตามอย่างที่คาดหวัง
+                    รวมถึงการตั้งคำถามเกี่ยวกับอนาคตที่เราต้องตัดสินใจด้วยตัวเอง<br>
+                    ในขณะเดียวกันก็ต้องเรียนรู้ที่จะยอมรับว่าบางสิ่งไม่อาจเป็นไปตามอย่างที่คาดหวัง<br>
+
                 </p>
             </div>
             <br>
@@ -76,8 +94,8 @@
                 <div class="text-center my-5 py-1 col-lg-12">
                     <img class=" taichirun" src="images/taichirun.jpg" data-aos="fade-up" data-aos-duration="3000">
                 </div>
-                <br> 
-                <p class="mx-auto" style="max-width:720px">
+                <br>
+                <p class="mx-auto bai-jamjuree-regular" style="max-width:720px">
                     ผลงานมังงะของ KAITO
                     ที่ถ่ายทอดเรื่องราวผ่านชีวิตของ<br>
                     กลุ่มนักเรียนมัธยมปลายในช่วงปีสุดท้ายของวัยมัธยม
@@ -93,11 +111,14 @@
     </header>
 
     <!-- STORY SYNOPSIS -->
-    <section id="synopsis" class="py-5">
-        <div class="container">
-            <h2 class=" text-center sec-title my-5">
-                    STORY SYNOPSIS
-                </h2> <br><br><br>
+    <section id="synopsis" class="py-5 ">
+        <div class="container ">
+
+            <h2 class=" text-center sec-title schoolbell-regular">
+                STORY SYNOPSIS
+            </h2>
+            <p class="text-muted text-center mali-regular">เนิ้อเรื่องย่อ</p>
+            <br><br>
 
             <div class="row align-items-center justify-content-center story-row">
 
@@ -107,7 +128,7 @@
                     <img class="img-fluid shadow" style="max-width:300px" src="images/blue flag 1.jpg"
                         alt="Blue Flag เล่ม 1" data-aos="fade-up" data-aos-duration="2000">
 
-                    <p class="mt-2 mb-0 fw-semibold">
+                    <p class="mt-2 mb-0 fw-semibold bai-jamjuree-regular">
                         Blue Flag วัยฝัน วันฟ้าคราม<br>
                         <span class="brand-jp">
                             青のフラッグ 1 巻
@@ -116,11 +137,11 @@
 
                 </div>
 
-                
-                <!-- กรอบข้อความ -->
-                <div class="col-auto">
 
-                    <div class="text-center quote-box story-text" data-aos="fade-up" data-aos-duration="2000">
+                <!-- กรอบข้อความ -->
+                <div class="col-auto bai-jamjuree-regular">
+
+                    <div class="text-center quote-box story-text " data-aos="fade-up" data-aos-duration="2000">
 
 
 
@@ -144,66 +165,138 @@
 
         </div>
     </section>
+    <br> <br> <br><br> <br>
+    <section>
+        <div class=" text-center py-1 mt-1">
+            <img class="hero-img img-fluid m-0 " src="images/trioblue.jpg" alt="Blue Flag ภาพปก class fixed">
+            <div class="text-center py-1 col-lg-12"></div>
+    </section>
+    <br> <br>
+
 
     <!-- WHAT YOU CAN LEARN -->
-    <section id="learn" class="py-5" style="background:var(--sky-soft)">
+    <section id="learn" class="py-5 learn-section">
         <div class="container">
-            <h2 class="sec-title">WHAT YOU CAN LEARN</h2>
-            <p class="text-muted">หนังสือเล่มนี้ให้อะไร</p>
-            <div class="row g-4 align-items-center">
-                <div class="col-md-8">
-                    <p>Blue Flag นำเสนอความรักในหลากหลายรูปแบบโดยไม่ตัดสิน ไม่ว่าความรู้สึกนั้นจะเกิดขึ้นระหว่างเพื่อน
-                        คนต่างเพศ หรือคนเพศเดียวกัน
-                        มังงะเรื่องนี้สอนให้เราเข้าใจว่าความรักไม่เคยมีสูตรตายตัว และไม่มีรูปแบบใดสมบูรณ์ไปกว่ากัน
+
+            <!-- หัวข้อ (กึ่งกลาง) -->
+            <div class="text-center mb-5">
+                <h2 class="sec-title schoolbell-regular">WHAT YOU CAN LEARN</h2>
+                <p class="text-muted mb-0 mali-regular">หนังสือเล่มนี้ให้อะไร</p>
+            </div>
+
+            <br> <br><br> <br>
+
+            <!-- เลย์เอาต์แบบเว็บตูน -->
+            <div class="webtoon">
+
+                <figure class="panel panel-a" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="images/taichiflower.jpg" alt="Blue Flag">
+                </figure>
+
+                <div class="panel panel-text bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="3000">
+                    <p>
+                        Blue Flag นำเสนอความรักในหลากหลายรูปแบบโดยไม่ตัดสิน
+                        ไม่ว่าความรู้สึกนั้นจะเกิดขึ้นระหว่างเพื่อน คนต่างเพศ
+                        หรือคนเพศเดียวกัน มังงะเรื่องนี้สอนให้เราเข้าใจว่า
+                        ความรักไม่เคยมีสูตรตายตัว และไม่มีรูปแบบใดสมบูรณ์ไปกว่ากัน
                         ทุกความรู้สึกคือสิ่งจริงแท้จากหัวใจในช่วงเวลานั้น
-                        ในช่วงวัยที่ทุกอย่างดูสับสน เมื่อเราไม่แน่ใจว่าอนาคตจะไปทางไหนหรือรู้สึกอย่างไร “Blue Flag”
-                        เปรียบเสมือนท้องฟ้าครามที่ค่อย ๆ เปลี่ยนสีไปตามเวลา
-                        แต่มันไม่เคยหายไปไหน เหมือนเสียงกระซิบแผ่วเบาที่บอกเราว่า “ไม่ว่าความรู้สึกของเธอจะเป็นแบบไหน
-                        ก็ไม่ต้องรีบหาคำตอบ เพราะทุกคนมีจังหวะของหัวใจเป็นของตัวเอง”</p>
+                        ในช่วงวัยที่ทุกอย่างดูสับสน เมื่อเราไม่แน่ใจว่าอนาคตจะไปทางไหน
+                        หรือรู้สึกอย่างไร “Blue Flag” เปรียบเสมือนท้องฟ้าคราม
+                        ที่ค่อย ๆ เปลี่ยนสีไปตามเวลา แต่มันไม่เคยหายไปไหน
+                        เหมือนเสียงกระซิบแผ่วเบาที่บอกเราว่า
+                        “ไม่ว่าความรู้สึกของเธอจะเป็นแบบไหน
+                        ก็ไม่ต้องรีบหาคำตอบ เพราะทุกคนมีจังหวะของหัวใจเป็นของตัวเอง”
+                    </p>
+
                 </div>
-                <div class="col-md-4 taichirun"><img class="img-fluid rounded" src="images/triosmile.jpg" alt="ภาพประกอบ"></div>
+
+
+
+                <figure class="panel panel-b" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="images/bestfriend.jpg" alt="ภาพประกอบ">
+                </figure>
+
+                <figure class="panel panel-c" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="images/futabasmile.jpg" alt="Best Friend Power">
+                </figure>
+
             </div>
         </div>
     </section>
 
+
+    <br> <br><br> <br><br> <br><br> <br><br> <br>
+
     <!-- WHAT YOU'LL GAIN -->
-    <section id="gain" class="blue-band py-5">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-3 text-center text-lg-start">
-                    <h2 class="fw-bold mb-1">WHAT YOU WILL GAIN</h2>
-                    <p class="mb-0">คุณค่าที่ได้รับจาก</p>
-                    <p class="brand-jp fs-4 mb-0">青のフラッグ 1 巻</p>
-                </div>
-                <div class="col-lg-9 d-grid gap-3">
-                    <div class="gain-card"><strong>01 —
-                            เข้าใจตัวเองมากขึ้น</strong><br>เรียนรู้ที่จะมองและยอมรับความรู้สึกของตัวเอง ทั้งความรัก
-                        ความสับสน และความคาดหวัง</div>
-                    <div class="gain-card"><strong>02 — เข้าใจความแตกต่างของผู้อื่น</strong><br>เปิดมุมมองต่อความคิด
-                        ความรู้สึก และตัวตนที่หลากหลายของแต่ละคน</div>
-                    <div class="gain-card"><strong>03 —
-                            เรียนรู้การสร้างความสัมพันธ์</strong><br>เข้าใจความสำคัญของการสื่อสาร การรับฟัง
-                        และการเคารพความรู้สึกของคนรอบตัว</div>
-                    <div class="gain-card"><strong>04 —
-                            เติบโตและยอมรับการเปลี่ยนแปลง</strong><br>เรียนรู้ว่าความผิดหวังและประสบการณ์ต่าง ๆ
-                        เป็นส่วนหนึ่งของการเติบโตและค้นหาตัวเอง</div>
+    <section id="gain" class="blue-band">
+        <div class="gain-layout">
+
+            <!-- หัวข้อด้านซ้าย -->
+            <div class="gain-heading">
+                <p class="gain-subtitle mali-regular">คุณค่าที่ได้รับจากการอ่าน</p>
+                <h2 class="schoolbell-regular">WHAT YOU WILL GAIN</h2>
+            </div>
+
+            <!-- ภาพพื้นหลังและกล่องข้อความ -->
+
+            <div class="gain-content">
+
+                <!-- ชั้นภาพพื้นหลัง -->
+                <div class="gain-bg"></div>
+
+                <!-- กล่องข้อความด้านหน้า -->
+                <div class="gain-cards">
+
+                    <div class="gain-card  bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
+                        <strong>01 – เข้าใจตัวเองมากขึ้น</strong>
+                        <p>เรียนรู้ที่จะยอมรับความรู้สึกของตัวเอง
+                            ไม่ว่าจะเกิดจากความรัก หรือความผิดหวัง</p>
+                    </div>
+
+                    <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="800
+     data-aos-delay=" 200">
+                        <strong>02 – เข้าใจความแตกต่างของผู้อื่น</strong>
+                        <p>เปิดมุมมองต่อความคิด ความรู้สึก
+                            และตัวตนที่หลากหลาย</p>
+                    </div>
+
+                    <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                        <strong>03 – เรียนรู้การสร้างความสัมพันธ์</strong>
+                        <p>เข้าใจความสำคัญของการสื่อสาร การรับฟัง
+                            และการเคารพความรู้สึกของคนรอบตัว</p>
+                    </div>
+
+                    <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+                        <strong>04 – เติบโตและยอมรับการเปลี่ยนแปลง</strong>
+                        <p>ความผิดหวังและประสบการณ์ต่าง ๆ
+                            เป็นส่วนหนึ่งของการเติบโตและค้นหาตัวเอง</p>
+                    </div>
+
                 </div>
             </div>
+
+
+            <!-- ข้อความภาษาญี่ปุ่นด้านขวา -->
+            <div class="gain-japanese">
+                青のフラッグ
+            </div>
+
         </div>
     </section>
+
 
     <!-- CHARACTER -->
     <section id="character" class="py-5">
-        <div class="container text-center">
-            <h2 class="sec-title mb-4">CHARACTER</h2>
+        <div class="container text-center ">
+            <h2 class="sec-title mb-4 schoolbell-regular">CHARACTER</h2>
             <div class="row justify-content-center g-4">
-                <div class="col-6 col-md-3"><img class="char-img" src="images/touma1.jpg" alt="มิตะ โทมะ">
+                <div class="col-6 col-md-3 bai-jamjuree-regular"><img class="char-img" src="images/touma1.jpg" alt="มิตะ โทมะ">
                     <p class="mt-2 fw-semibold">มิตะ โทมะ</p>
                 </div>
-                <div class="col-6 col-md-3"><img class="char-img" src="images/taichi.jpg" alt="อิจิโนเสะ ไทจิ">
+                <div class="col-6 col-md-3 bai-jamjuree-regular"><img class="char-img" src="images/taichi.jpg" alt="อิจิโนเสะ ไทจิ">
                     <p class="mt-2 fw-semibold">อิจิโนเสะ ไทจิ</p>
                 </div>
-                <div class="col-6 col-md-3"><img class="char-img" src="images/futaba.jpg" alt="คุเสะ ฟุตาบะ">
+                <div class="col-6 col-md-3 bai-jamjuree-regular"><img class="char-img" src="images/futaba.jpg" alt="คุเสะ ฟุตาบะ">
                     <p class="mt-2 fw-semibold">คุเสะ ฟุตาบะ</p>
                 </div>
             </div>
@@ -212,9 +305,10 @@
 
     <!-- COMICS: เลื่อนซ้าย-ขวา 8 เล่มในแถบเดียว -->
     <section id="comics" class="blue-band py-5">
-        <div class="container text-center">
-            <h2 class="fw-bold">COMICS</h2>
+        <div class="container text-center bai-jamjuree-regular">
+            <h2 class="fw-bold schoolbell-regular">COMICS</h2>
             <p>มังงะจากสำนักพิมพ์ SHUEISHA มีทั้งหมด 8 เล่มจบ</p>
+            <br> <br>
             <div class="position-relative px-3">
                 <button class="comic-btn prev" id="prevBtn" aria-label="ก่อนหน้า">&#8249;</button>
                 <div class="comic-track" id="comicTrack">
@@ -250,164 +344,16 @@
     </section>
 
     <footer class="py-5 text-center">
-        <div class="container">
-            <p class="fs-5 mb-0">บางครั้ง การเติบโตอาจไม่ใช่แค่การได้ทำตามฝัน<br>แต่คือการเข้าใจหัวใจของตัวเอง</p>
+        <div class="container" 
+        data-aos="fade-up"
+        data-aos-duration="2000" >
+            <br> <br>
+            <p class="fs-5 mb-0 mali-regular" >บางครั้ง การเติบโตอาจไม่ใช่แค่การได้ทำตามฝัน<br>แต่คือการเข้าใจหัวใจของตัวเอง</p>
         </div>
+        <br> <br>
+
+        <img src="images/iloveblueflag.jpg" class="col-6 col-md-3">
     </footer>
-
-
-    <section class="faq-section">
-
-        <div class="accordion" id="accordionFAQ">
-
-            <!-- คำถามที่ 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Q: ผมไม่ใช่สายกิจกรรม ไม่ชอบทำกิจกรรมเลย ไม่เข้ารับน้องได้ไหมครับ
-                    </button>
-                </h2>
-
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionFAQ">
-
-                    <div class="accordion-body">
-                        <strong>A:</strong>
-                        การรับน้องนั้น มีขึ้นเพื่อกระชับความสัมพันธ์กับเพื่อนใหม่ที่กำลังจะเข้ามาเรียนในคณะ
-                        หรือสาขาวิชาเอก-โทนี้ด้วยกัน แต่ไม่มีการบังคับให้เข้าร่วมกิจกรรมนี้นะครับ
-                        ดังนั้นไม่ต้องเข้าก็ได้ เพราะไม่มีผลอะไรกับการใช้ชีวิตในสาขาวิชานี้แน่นอน
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- คำถามที่ 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Q: แล้วกิจกรรมรับน้องของคณะ และรับน้องของเอก-โทของที่นี่มีโซตัสไหมคะ
-                    </button>
-                </h2>
-
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionFAQ">
-
-                    <div class="accordion-body">
-                        <strong>A:</strong>
-                        ที่นี่ไม่มีโซตัสทั้งรับน้องของคณะ และรับน้องของเอก-โท
-                        ดังนั้นไม่ต้องกังวลนะคะ
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- คำถามที่ 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Q: เคยได้ยินว่าเอกนี้มี "กิจกรรมห้องสมุดเคลื่อนที่"
-                        ซึ่งเป็นกิจกรรมที่เป็นไฮไลท์เด็ดของภาควิชา
-                        แต่ถ้าไม่อยากเข้าร่วมกิจกรรมนี้ จะมีปัญหาอะไรไหมครับ
-                    </button>
-                </h2>
-
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionFAQ">
-
-                    <div class="accordion-body">
-                        <strong>A:</strong>
-                        จริง ๆ ทางภาควิชาไม่ได้บังคับ แต่ "ขอความร่วมมือ"
-                        ดังนั้นเข้าร่วมเพื่อกิจกรรมเอาไว้ใส่ในแฟ้มรวบรวมผลงาน
-                        เพื่อสั่งสมประสบการณ์ก็ดีครับ
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- คำถามที่ 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Q: ไม่ประสงค์ฝึกงานได้ไหมคะ
-                    </button>
-                </h2>
-
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#accordionFAQ">
-
-                    <div class="accordion-body">
-                        <strong>A:</strong>
-                        ถ้าเป็นเด็ก "เอก" นี้ จะต้องฝึกงานนะคะ
-                        เพราะต้องนำประสบการณ์ที่ได้จากการฝึกงานไปเรียนต่อในรายวิชา
-                        "สัมมนาการฝึกปฏิบัติงาน" เป็นวิชาบังคับ
-                        ซึ่งจะต้องนับเป็นหน่วยกิตก่อนจบการศึกษาด้วย
-                        แต่ถ้าเป็นเด็ก "โท" ไม่จำเป็นต้องฝึกงานค่ะ
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="carousel-section">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-
-            <!-- Carousel Images -->
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img src="images/c1.webp" class="d-block w-100" alt="ภาพที่ 1">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="images/c2.webp" class="d-block w-100" alt="ภาพที่ 2">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="images/c3.webp" class="d-block w-100" alt="ภาพที่ 3">
-                </div>
-
-            </div>
-
-            <!-- Previous -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <!-- Next -->
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
-        </div>
-
-    </section>
 
 
 
@@ -429,7 +375,7 @@
         AOS.init();
     </script>
 
-
+<script src="js/loader.js"></script>
 </body>
 
 
