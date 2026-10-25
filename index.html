@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blue Flag | วัยฝัน วันฟ้าคราม</title>
-    <meta name="keywords" content="Blue Flag วัยฝัน วันฟ้าคราม,Blue Flag รีวิว, Blue Flag เรื่องย่อ,มังงะ Coming of Age">
-    <meta name="description" content="Blue Flag วัยฝัน วันฟ้าคราม มังงะญี่ปุ่นโดย KAITO มังงะแนว Coming of Age ที่ถ่ายทอดเรื่องราวของชีวิตวัยรุ่นที่แฝงปรัชญาชีวิตได้อย่างคมคาย">
+    <meta name="keywords"
+        content="Blue Flag วัยฝัน วันฟ้าคราม,Blue Flag เรื่องย่อ,Coming of Age,ชีวิต,วัยรุ่น,มิตรภาพ,ความรัก">
+    <meta name="description"
+        content="Blue Flag วัยฝัน วันฟ้าคราม มังงะญี่ปุ่นโดย KAITO มังงะแนว Coming of Age ที่ถ่ายทอดเรื่องราวของชีวิตวัยรุ่นที่แฝงปรัชญาชีวิตได้อย่างคมคาย">
     <link rel="stylesheet" href="css/loader.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,369 +28,420 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+
     <body class="is-loading">
 
-  <div id="loader" class="loader">
-    <div class="loader__inner">
-      <h1 class="loader__title">BLUE FLAG</h1>
-      <div class="loader__bar"><span id="loaderBar"></span></div>
-      <p class="loader__count"><span id="loaderNum">0</span>%</p>
-    </div>
-  </div>
-
-    <!-- 1) NAVIGATION: คลิกแล้วเลื่อนไปยัง section ตาม id -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand brand-jp schoolbell-regular" href="#introduction">ABSOLUTE PEAK</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-label="เมนู">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#synopsis">Story Synopsis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#learn">What You Can Learn</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gain">What You'll Gain</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#character">Character</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#comics">Comics</a></li>
-                </ul>
+        <div id="loader" class="loader">
+            <div class="loader__inner">
+                <h1 class="loader__title">BLUE FLAG</h1>
+                <div class="loader__bar"><span id="loaderBar"></span></div>
+                <p class="loader__count"><span id="loaderNum">0</span>%</p>
             </div>
         </div>
-    </nav>
 
-    <!-- INTRODUCTION -->
-    <header class="hero pt-5">
-        <div class=" text-center py-1 mt-1">
-            <img class="hero-img img-fluid m-0 " src="images/banner.jpg" alt="Blue Flag ภาพปก">
-            <div class="text-center py-1 col-lg-12"></div>
-            <h1 id="introduction" class="m-0 text-center">
-                <img class="logo-title d-block mx-auto" src="images/logo.png" alt="Blue Flag 青のフラッグ">
-            </h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="mt-2">
-                <h1 class=" h4 sec-title mt-4 bai-jamjuree-regular " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
-                    ไม่ว่าจะเลือกเส้นทางไหน ธงสีฟ้าผืนนี้ก็ยังคงโบกสะบัดต่อไป
+        <!-- 1) NAVIGATION: คลิกแล้วเลื่อนไปยัง section ตาม id -->
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand brand-jp schoolbell-regular" href="#introduction">ABSOLUTE PEAK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-label="เมนู">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#synopsis">Story Synopsis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#learn">What You Can Learn</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gain">What You'll Gain</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#audience">Audience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#character">Character</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#comics">Comics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- INTRODUCTION -->
+        <header class="hero pt-5">
+            <div class=" text-center py-1 mt-1">
+                <img class="hero-img img-fluid m-0 " src="images/banner.jpg" alt="Blue Flag ภาพปก">
+                <div class="text-center py-1 col-lg-12"></div>
+                <h1 id="introduction" class="m-0 text-center">
+                    <img class="logo-title d-block mx-auto" src="images/logo.png" alt="Blue Flag 青のフラッグ">
                 </h1>
-                <p class="containerlead mx-auto mt-4 bai-jamjuree-regular good-text" style="max-width:720px " data-aos="fade-down"
-                    data-aos-easing="linear" data-aos-duration="2000">
-                    ช่วงวัยรุ่นอาจเป็นหนึ่งในช่วงเวลา
-                    ที่พบเจอกับการเปลี่ยนผ่านของชีวิตมากที่สุด<br>
-                    เพราะเป็นช่วงรอยต่อระหว่างความเป็นเด็กกับการก้าวเข้าสู่ความเป็นผู้ใหญ่<br>
-                    หลายสิ่งที่เคยเรียบง่ายเริ่มซับซ้อนขึ้น ทั้งความรัก <br>
-                    ความฝัน ความสัมพันธ์กับเพื่อน<br>
-                    รวมถึงการตั้งคำถามเกี่ยวกับอนาคตที่เราต้องตัดสินใจด้วยตัวเอง<br>
-                    ในขณะเดียวกันก็ต้องเรียนรู้ที่จะยอมรับว่าบางสิ่งไม่อาจเป็นไปตามอย่างที่คาดหวัง<br>
-
-                </p>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class=" text-center my-3 py-1 mt-2">
-                <img class="hero-img img-fluid mt-2 " src="images/triorun.jpg" alt="Blue Flag ภาพปก">
                 <br>
                 <br>
-                <div class="text-center my-5 py-1 col-lg-12">
-                    <img class=" taichirun" src="images/taichirun.jpg" data-aos="fade-up" data-aos-duration="3000">
-                </div>
                 <br>
-                <p class="mx-auto bai-jamjuree-regular good-text" style="max-width:720px">
-                    ผลงานมังงะของ KAITO
-                    ที่ถ่ายทอดเรื่องราวผ่านชีวิตของ<br>
-                    กลุ่มนักเรียนมัธยมปลายในช่วงปีสุดท้ายของวัยมัธยม
-                    ที่ต้องก้าวผ่าน <br> ช่วงเวลาสำคัญของชีวิต การเลือกทางเดินให้กับตนเอง<br>
-                    เต็มไปด้วยเรื่องราวของความรัก
-                    มิตรภาพ
-                    อนาคต การยอมรับในตัวเอง
-                </p>
-                <br> <br> <br>
+                <br>
+                <div class="mt-2">
+                    <h2 class="h4 sec-title mt-4 bai-jamjuree-regular intro-heading" data-aos="fade-down"
+                        data-aos-easing="linear" data-aos-duration="2000">
+                        ไม่ว่าจะเลือกเส้นทางไหน ธงสีฟ้าผืนนี้ก็ยังคงโบกสะบัดต่อไป
+                    </h2>
+                    <p class="containerlead mx-auto mt-4 bai-jamjuree-regular good-text" style="max-width:720px "
+                        data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                        ช่วงวัยรุ่นอาจเป็นหนึ่งในช่วงเวลา
+                        ที่พบเจอกับการเปลี่ยนผ่านของชีวิตมากที่สุด<br>
+                        เพราะเป็นช่วงรอยต่อระหว่างความเป็นเด็กกับการก้าวเข้าสู่ความเป็นผู้ใหญ่<br>
+                        หลายสิ่งที่เคยเรียบง่ายเริ่มซับซ้อนขึ้น ทั้งความรัก <br>
+                        ความฝัน ความสัมพันธ์กับเพื่อน<br>
+                        รวมถึงการตั้งคำถามเกี่ยวกับอนาคตที่เราต้องตัดสินใจด้วยตัวเอง<br>
+                        ในขณะเดียวกันก็ต้องเรียนรู้ที่จะยอมรับว่าบางสิ่งไม่อาจเป็นไปตามอย่างที่คาดหวัง<br>
 
-            </div>
-        </div>
-    </header>
-
-    <!-- STORY SYNOPSIS -->
-    <section id="synopsis" class="py-5 ">
-        <div class="container ">
-
-            <h2 class=" text-center sec-title schoolbell-regular">
-                STORY SYNOPSIS
-            </h2>
-            <p class="text-muted text-center mali-regular">เนิ้อเรื่องย่อ</p>
-            <br><br>
-
-            <div class="row align-items-center justify-content-center story-row">
-
-                <!-- รูป -->
-                <div class="col-auto text-center">
-
-                    <img class="img-fluid shadow" style="max-width:300px" src="images/blue flag 1.jpg"
-                        alt="Blue Flag เล่ม 1" data-aos="fade-up" data-aos-duration="2000">
-
-                    <p class="mt-2 mb-0 fw-semibold bai-jamjuree-regular">
-                        Blue Flag วัยฝัน วันฟ้าคราม<br>
-                        <span class="brand-jp">
-                            青のフラッグ 1 巻
-                        </span>
                     </p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class=" text-center my-3 py-1 mt-2">
+                    <img class="hero-img img-fluid mt-2 " src="images/triorun.jpg" alt="Blue Flag ภาพปก">
+                    <br>
+                    <br>
+                    <div class="text-center my-5 py-1 col-lg-12">
+                        <img class=" taichirun" src="images/taichirun.jpg" data-aos="fade-up" data-aos-duration="3000">
+                    </div>
+                    <br>
+                    <h1 class="mx-auto bai-jamjuree-regular good-text" style="max-width:720px">
+                        ผลงานมังงะ Coming of Age ของ KAITO
+                        ที่ถ่ายทอดเรื่องราวผ่านชีวิตของ<br>
+                        กลุ่มนักเรียนมัธยมปลายในช่วงปีสุดท้ายของวัยมัธยม
+                        ที่ต้องก้าวผ่าน <br> ช่วงเวลาสำคัญของชีวิต การเลือกทางเดินให้กับตนเอง<br>
+                        เต็มไปด้วยเรื่องราวของความรัก
+                        มิตรภาพ
+                        อนาคต การยอมรับในตัวเอง
+                    </h1>
+                    <br> <br> <br>
 
                 </div>
+            </div>
+        </header>
+
+        <!-- STORY SYNOPSIS -->
+        <section id="synopsis" class="py-5 ">
+            <div class="container ">
+
+                <h2 class=" text-center sec-title schoolbell-regular">
+                    STORY SYNOPSIS
+                </h2>
+                <p class="text-muted text-center mali-regular">เนื้อเรื่องย่อ</p>
+                <br><br>
+
+                <div class="row align-items-center justify-content-center story-row">
+
+                    <!-- รูป -->
+                    <div class="col-auto text-center">
+
+                        <img class="img-fluid shadow" style="max-width:300px" src="images/blue flag 1.jpg"
+                            alt="Blue Flag เล่ม 1" data-aos="fade-up" data-aos-duration="2000">
+
+                        <p class="mt-2 mb-0 fw-semibold bai-jamjuree-regular">
+                            Blue Flag วัยฝัน วันฟ้าคราม<br>
+                            <span class="brand-jp">
+                                青のフラッグ 1 巻
+                            </span>
+                        </p>
+
+                    </div>
 
 
-                <!-- กรอบข้อความ -->
-                <div class="col-auto bai-jamjuree-regular">
+                    <!-- กรอบข้อความ -->
+                    <div class="col-auto bai-jamjuree-regular">
 
-                    <div class="text-center quote-box story-text " data-aos="fade-up" data-aos-duration="2000">
+                        <div class="text-center quote-box story-text " data-aos="fade-up" data-aos-duration="2000">
 
 
 
-                        ในฤดูใบไม้ผลิของนักเรียน ม.6 เมื่อชีวิต<br>
-                        ยืนอยู่บนทางแยก อิจิโนเสะ ไทจิ <br>
-                        มีจุดอ่อนคือ คุเสะ ฟุตาบะ ซึ่งเจ้าตัว<br>
-                        ก็ไม่รู้เหมือนกันว่าเพราะอะไร และอีกหนึ่งคน
-                        คือเพื่อนสมัยเด็ก มิตะ โทมะ <br>
-                        ผู้ซึ่งชอบอยู่ในโลกของความเป็นจริง<br>
-                        เขาได้อยู่ห้องเดียวกับทั้งสองคนนี้<br>
-                        วันหนึ่งฟุตาบะได้เปิดเผยความรู้สึกที่มี<br>
-                        ต่อโทมะให้เขารู้ ไทจิที่ถูกขอร้องให้ช่วย<br>
-                        จะรับมืออย่างไร เกิดเป็น <br>
-                        ความสัมพันธ์ที่ยุ่งเหยิงของทั้งสามคน<br>
+                            ในฤดูใบไม้ผลิของนักเรียน ม.6 เมื่อชีวิต<br>
+                            ยืนอยู่บนทางแยก อิจิโนเสะ ไทจิ <br>
+                            มีจุดอ่อนคือ คุเสะ ฟุตาบะ ซึ่งเจ้าตัว<br>
+                            ก็ไม่รู้เหมือนกันว่าเพราะอะไร และอีกหนึ่งคน
+                            คือเพื่อนสมัยเด็ก มิตะ โทมะ <br>
+                            ผู้ซึ่งชอบอยู่ในโลกของความเป็นจริง<br>
+                            เขาได้อยู่ห้องเดียวกับทั้งสองคนนี้<br>
+                            วันหนึ่งฟุตาบะได้เปิดเผยความรู้สึกที่มี<br>
+                            ต่อโทมะให้เขารู้ ไทจิที่ถูกขอร้องให้ช่วย<br>
+                            จะรับมืออย่างไร เกิดเป็น <br>
+                            ความสัมพันธ์ที่ยุ่งเหยิงของทั้งสามคน<br>
+
+                        </div>
 
                     </div>
 
                 </div>
 
             </div>
-
-        </div>
-    </section>
-    <br> <br> <br><br> <br>
-    <section>
-        <div class=" text-center py-1 mt-1">
-            <img class="hero-img img-fluid m-0 " src="images/trioblue.jpg" alt="Blue Flag ภาพปก class fixed">
-            <div class="text-center py-1 col-lg-12"></div>
-    </section>
-    <br> <br>
+        </section>
+        <br> <br> <br><br> <br>
+        <section>
+            <div class=" text-center py-1 mt-1">
+                <img class="hero-img img-fluid m-0 " src="images/trioblue.jpg" alt="Blue Flag ภาพปก class fixed">
+                <div class="text-center py-1 col-lg-12"></div>
+        </section>
+        <br> <br>
 
 
-    <!-- WHAT YOU CAN LEARN -->
-    <section id="learn" class="py-5 learn-section">
-        <div class="container">
+        <!-- WHAT YOU CAN LEARN -->
+        <section id="learn" class="py-5 learn-section">
+            <div class="container">
 
-            <!-- หัวข้อ (กึ่งกลาง) -->
-            <div class="text-center mb-5">
-                <h2 class="sec-title schoolbell-regular">WHAT YOU CAN LEARN</h2>
-                <p class="text-muted mb-0 mali-regular">หนังสือเล่มนี้ให้อะไร</p>
-            </div>
-
-            <br> <br><br> <br>
-
-            <!-- เลย์เอาต์แบบเว็บตูน -->
-            <div class="webtoon">
-
-                <figure class="panel panel-a" data-aos="fade-left" data-aos-duration="3000">
-                    <img src="images/taichiflower.jpg" alt="Blue Flag">
-                </figure>
-
-                <div class="panel panel-text bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="3000">
-                    <p>
-                        Blue Flag นำเสนอความรักในหลากหลายรูปแบบโดยไม่ตัดสิน
-                        ไม่ว่าความรู้สึกนั้นจะเกิดขึ้นระหว่างเพื่อน คนต่างเพศ
-                        หรือคนเพศเดียวกัน มังงะเรื่องนี้สอนให้เราเข้าใจว่า
-                        ความรักไม่เคยมีสูตรตายตัว และไม่มีรูปแบบใดสมบูรณ์ไปกว่ากัน
-                        ทุกความรู้สึกคือสิ่งจริงแท้จากหัวใจในช่วงเวลานั้น
-                        ในช่วงวัยที่ทุกอย่างดูสับสน เมื่อเราไม่แน่ใจว่าอนาคตจะไปทางไหน
-                        หรือรู้สึกอย่างไร<br>“Blue Flag”
-                        เปรียบเสมือนท้องฟ้าครามที่ค่อย ๆ เปลี่ยนสีไปตามเวลา 
-                        แต่มันไม่เคยหายไปไหน เหมือนเสียงกระซิบแผ่วเบาที่บอกเราว่า
-                        “ไม่ว่าความรู้สึกของเธอจะเป็นแบบไหน
-                        ก็ไม่ต้องรีบหาคำตอบ เพราะทุกคนมีจังหวะของหัวใจเป็นของตัวเอง”
-                    </p>
-
+                <!-- หัวข้อ (กึ่งกลาง) -->
+                <div class="text-center mb-5">
+                    <h2 class="sec-title schoolbell-regular">WHAT YOU CAN LEARN</h2>
+                    <p class="text-muted mb-0 mali-regular">หนังสือเล่มนี้ให้อะไร</p>
                 </div>
 
+                <br> <br><br> <br>
 
+                <!-- เลย์เอาต์แบบเว็บตูน -->
+                <div class="webtoon">
 
-                <figure class="panel panel-b" data-aos="fade-right" data-aos-duration="3000">
-                    <img src="images/bestfriend.jpg" alt="ภาพประกอบ">
-                </figure>
+                    <figure class="panel panel-a" data-aos="fade-left" data-aos-duration="3000">
+                        <img src="images/taichiflower.jpg" alt="Blue Flag">
+                    </figure>
 
-                <figure class="panel panel-c" data-aos="fade-left" data-aos-duration="3000">
-                    <img src="images/futabasmile.jpg" alt="Best Friend Power">
-                </figure>
+                    <div class="panel panel-text bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="3000">
+                        <p>
+                            Blue Flag นำเสนอความรักในหลากหลายรูปแบบโดยไม่ตัดสิน
+                            ไม่ว่าความรู้สึกนั้นจะเกิดขึ้นระหว่างเพื่อน คนต่างเพศ
+                            หรือคนเพศเดียวกัน มังงะเรื่องนี้สอนให้เราเข้าใจว่า
+                            ความรักไม่เคยมีสูตรตายตัว และไม่มีรูปแบบใดสมบูรณ์ไปกว่ากัน
+                            ทุกความรู้สึกคือสิ่งจริงแท้จากหัวใจในช่วงเวลานั้น
+                            ในช่วงวัยที่ทุกอย่างดูสับสน เมื่อเราไม่แน่ใจว่าอนาคตจะไปทางไหน
+                            หรือรู้สึกอย่างไร<br>“Blue Flag”
+                            เปรียบเสมือนท้องฟ้าครามที่ค่อย ๆ เปลี่ยนสีไปตามเวลา
+                            แต่มันไม่เคยหายไปไหน เหมือนเสียงกระซิบแผ่วเบาที่บอกเราว่า
+                            “ไม่ว่าความรู้สึกของเธอจะเป็นแบบไหน
+                            ก็ไม่ต้องรีบหาคำตอบ เพราะทุกคนมีจังหวะของหัวใจเป็นของตัวเอง”
+                        </p>
 
-            </div>
-        </div>
-    </section>
-
-
-    <br> <br><br> <br><br> <br><br> <br><br> <br>
-
-    <!-- WHAT YOU'LL GAIN -->
-    <section id="gain" class="blue-band">
-        <div class="gain-layout">
-
-            <!-- หัวข้อด้านซ้าย -->
-            <div class="gain-heading">
-                <p class="gain-subtitle mali-regular">คุณค่าที่ได้รับจากการอ่าน</p>
-                <h2 class="schoolbell-regular">WHAT YOU WILL GAIN</h2>
-            </div>
-
-            <!-- ภาพพื้นหลังและกล่องข้อความ -->
-
-            <div class="gain-content">
-
-                <!-- ชั้นภาพพื้นหลัง -->
-                <div class="gain-bg"></div>
-
-                <!-- กล่องข้อความด้านหน้า -->
-                <div class="gain-cards">
-
-                    <div class="gain-card  bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="0">
-                        <strong>01 – เข้าใจตัวเองมากขึ้น</strong>
-                        <p>เรียนรู้ที่จะยอมรับความรู้สึกของตัวเอง
-                            ไม่ว่าจะเกิดจากความรัก หรือความผิดหวัง</p>
                     </div>
 
-                    <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200
+
+
+                    <figure class="panel panel-b" data-aos="fade-right" data-aos-duration="3000">
+                        <img src="images/bestfriend.jpg" alt="ภาพประกอบ">
+                    </figure>
+
+                    <figure class="panel panel-c" data-aos="fade-left" data-aos-duration="3000">
+                        <img src="images/futabasmile.jpg" alt="Best Friend Power">
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+
+        <br> <br><br> <br><br> <br><br> <br><br> <br>
+
+        <!-- WHAT YOU'LL GAIN -->
+        <section id="gain" class="blue-band">
+            <div class="gain-layout">
+
+                <!-- หัวข้อด้านซ้าย -->
+                <div class="gain-heading">
+                    <p class="gain-subtitle mali-regular">คุณค่าที่ได้รับจากการอ่าน</p>
+                    <h2 class="schoolbell-regular">WHAT YOU WILL GAIN</h2>
+                </div>
+
+                <!-- ภาพพื้นหลังและกล่องข้อความ -->
+
+                <div class="gain-content">
+
+                    <!-- ชั้นภาพพื้นหลัง -->
+                    <div class="gain-bg"></div>
+
+                    <!-- กล่องข้อความด้านหน้า -->
+                    <div class="gain-cards">
+
+                        <div class="gain-card  bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200"
+                            data-aos-delay="0">
+                            <strong>01 – เข้าใจตัวเองมากขึ้น</strong>
+                            <p>เรียนรู้ที่จะยอมรับความรู้สึกของตัวเอง
+                                ไม่ว่าจะเกิดจากความรัก หรือความผิดหวัง</p>
+                        </div>
+
+                        <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200
      data-aos-delay=" 200">
-                        <strong>02 – เข้าใจความแตกต่างของผู้อื่น</strong>
-                        <p>เปิดมุมมองต่อความคิด ความรู้สึก
-                            และตัวตนที่หลากหลาย</p>
-                    </div>
+                            <strong>02 – เข้าใจความแตกต่างของผู้อื่น</strong>
+                            <p>เปิดมุมมองต่อความคิด ความรู้สึก
+                                และตัวตนที่หลากหลาย</p>
+                        </div>
 
-                    <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
-                        <strong>03 – เรียนรู้การสร้างความสัมพันธ์</strong>
-                        <p>เข้าใจความสำคัญของการสื่อสาร การรับฟัง
-                            และการเคารพความรู้สึกของคนรอบตัว</p>
-                    </div>
+                        <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200"
+                            data-aos-delay="400">
+                            <strong>03 – เรียนรู้การสร้างความสัมพันธ์</strong>
+                            <p>เข้าใจความสำคัญของการสื่อสาร การรับฟัง
+                                และการเคารพความรู้สึกของคนรอบตัว</p>
+                        </div>
 
-                    <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
-                        <strong>04 – เติบโตและยอมรับการเปลี่ยนแปลง</strong>
-                        <p>ความผิดหวังและประสบการณ์ต่าง ๆ
-                            เป็นส่วนหนึ่งของการเติบโตและค้นหาตัวเอง</p>
-                    </div>
+                        <div class="gain-card bai-jamjuree-regular" data-aos="fade-right" data-aos-duration="1200"
+                            data-aos-delay="600">
+                            <strong>04 – เติบโตและยอมรับการเปลี่ยนแปลง</strong>
+                            <p>ความผิดหวังและประสบการณ์ต่าง ๆ
+                                เป็นส่วนหนึ่งของการเติบโตและค้นหาตัวเอง</p>
+                        </div>
 
+                    </div>
+                </div>
+
+
+                <!-- ข้อความภาษาญี่ปุ่นด้านขวา -->
+                <div class="gain-japanese">
+                    青のフラッグ
+                </div>
+
+            </div>
+        </section>
+
+        <section id="audience" class="py-5">
+            <div class="container text-center">
+
+
+                <!-- หัวข้อ -->
+                <h2 class="sec-title mt-2 schoolbell-regular">
+                    AUDIENCE
+                </h2>
+
+                <p class="text-muted mb-0 mali-regular">
+                    หนังสือเล่มนี้เหมาะกับใคร
+                </p>
+                <br><br><br>
+
+                <!-- รูปประกอบด้านบน -->
+                <div class="my-4">
+                    <img class="taichirun" src="images/triosmile.jpg" alt="ภาพประกอบ Blue Flag" class="img-fluid"
+                        style="max-width: 500px; width: 100%;" data-aos="fade-up" data-aos-duration="2000">
+                </div>
+
+                <br>
+
+                <!-- เนื้อหา -->
+                <p class="containerlead mx-auto mt-4 bai-jamjuree-regular good-text" style="max-width: 720px;">
+
+                    Blue Flag เป็นเรื่องราวที่เปิดกว้างสำหรับนักอ่านทุกเพศและทุกวัย
+                    โดยเฉพาะผู้ที่กำลังอยู่ในช่วงวัยเดียวกับตัวละคร หรือเคยผ่านช่วงเวลาเหล่านั้นมาแล้ว
+                    อาจยิ่งทำให้รู้สึกเชื่อมโยงกับเรื่องราวได้เป็นพิเศษ เพราะภายใต้เรื่องราวชีวิตวัยรุ่น
+                    ผู้เขียนได้สอดแทรกประเด็นต่าง ๆ
+                    ที่ไม่ว่าใครก็ต่างพบเจอสักครั้งในชีวิต ไม่ว่าจะเป็นเรื่องความรัก มิตรภาพ
+                    การยอมรับตัวเอง หรือช่วงเวลาที่เราต้องตัดสินใจอะไรบางอย่าง<BR> <br>
+
+                    เรื่องราวของตัวละครแต่ละคนจะพาผู้อ่านเข้าไปสำรวจความคิดและความรู้สึกที่แตกต่างกัน
+                    เปิดมุมมองให้เราได้เข้าใจว่า แม้จะเผชิญกับสถานการณ์เดียวกัน
+                    แต่ละคนก็อาจมีวิธีคิดและคำตอบที่ไม่เหมือนกัน
+                    เช่นเดียวกับชีวิตจริงที่ทุกคนต่างมีเรื่องราวและเหตุผลเป็นของตัวเอง
+                    และบางครั้ง การได้ทำความเข้าใจผู้อื่น ก็อาจเป็นจุดเริ่มต้นของการเข้าใจตัวเราเองมากขึ้น
+
+                </p>
+
+            </div>
+        </section>
+        <!-- END BOOK AUDIENCE -->
+
+
+        <!-- CHARACTER -->
+        <section id="character" class="py-5">
+            <div class="container text-center ">
+                <h2 class="sec-title  schoolbell-regular">CHARACTER</h2>
+                <p class="text-muted mb-0 mali-regular">ตัวละคร</p>
+                <br> <br>
+                <div class="row justify-content-center g-4">
+                    <div class="col-6 col-md-3 bai-jamjuree-regular">
+                        <img class="char-img" src="images/touma1.jpg" alt="มิตะ โทมะ" data-aos="fade-up"
+                            data-aos-duration="2000">
+                        <p class="mt-2 fw-semibold">มิตะ โทมะ</p>
+                    </div>
+                    <div class="col-6 col-md-3 bai-jamjuree-regular">
+                        <img class="char-img" src="images/taichi.jpg" alt="อิจิโนเสะ ไทจิ" data-aos="fade-up"
+                            data-aos-duration="2000">
+                        <p class="mt-2 fw-semibold">อิจิโนเสะ ไทจิ</p>
+                    </div>
+                    <div class="col-6 col-md-3 bai-jamjuree-regular">
+                        <img class="char-img" src="images/futaba.jpg" alt="คุเสะ ฟุตาบะ" data-aos="fade-up"
+                            data-aos-duration="2000">
+                        <p class="mt-2 fw-semibold">คุเสะ ฟุตาบะ</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-
-            <!-- ข้อความภาษาญี่ปุ่นด้านขวา -->
-            <div class="gain-japanese">
-                青のフラッグ
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- CHARACTER -->
-    <section id="character" class="py-5">
-        <div class="container text-center ">
-            <h2 class="sec-title  schoolbell-regular">CHARACTER</h2>
-            <p class="text-muted mb-0 mali-regular">ตัวละคร</p>
-        <br> <br>
-            <div class="row justify-content-center g-4">
-                <div class="col-6 col-md-3 bai-jamjuree-regular">
-                    <img class="char-img" src="images/touma1.jpg" alt="มิตะ โทมะ"
-                    data-aos="fade-up" data-aos-duration="2000">
-                    <p class="mt-2 fw-semibold">มิตะ โทมะ</p>
-                </div>
-                <div class="col-6 col-md-3 bai-jamjuree-regular">
-                    <img class="char-img" src="images/taichi.jpg" alt="อิจิโนเสะ ไทจิ"
-                    data-aos="fade-up" data-aos-duration="2000">
-                    <p class="mt-2 fw-semibold">อิจิโนเสะ ไทจิ</p>
-                </div>
-                <div class="col-6 col-md-3 bai-jamjuree-regular">
-                    <img class="char-img" src="images/futaba.jpg" alt="คุเสะ ฟุตาบะ"
-                    data-aos="fade-up" data-aos-duration="2000">
-                    <p class="mt-2 fw-semibold">คุเสะ ฟุตาบะ</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <br> <br>
-
-    <!-- COMICS: เลื่อนซ้าย-ขวา 8 เล่มในแถบเดียว -->
-    <section id="comics" class="blue-band py-5">
-        <div class="container text-center bai-jamjuree-regular">
-            <h2 class="fw-bold schoolbell-regular">COMICS</h2>
-            <p>มังงะจากสำนักพิมพ์ SHUEISHA มีทั้งหมด 8 เล่มจบ</p>
-            <br> <br>
-            <div class="position-relative px-3">
-                <button class="comic-btn prev" id="prevBtn" aria-label="ก่อนหน้า">&#8249;</button>
-                <div class="comic-track" id="comicTrack">
-                    <div class="comic-item"><img src="images/blue flag 1.jpg" alt="เล่ม 1">
-                        <div class="mt-2">เล่ม 1</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 2.jpg" alt="เล่ม 2">
-                        <div class="mt-2">เล่ม 2</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 3.jpg" alt="เล่ม 3">
-                        <div class="mt-2">เล่ม 3</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 4.jpg" alt="เล่ม 4">
-                        <div class="mt-2">เล่ม 4</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 5.jpg" alt="เล่ม 5">
-                        <div class="mt-2">เล่ม 5</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 6.jpg" alt="เล่ม 6">
-                        <div class="mt-2">เล่ม 6</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 7.jpg" alt="เล่ม 7">
-                        <div class="mt-2">เล่ม 7</div>
-                    </div>
-                    <div class="comic-item"><img src="images/blue flag 8.jpg" alt="เล่ม 8">
-                        <div class="mt-2">เล่ม 8</div>
-                    </div>
-
-                </div>
-                <button class="comic-btn next" id="nextBtn" aria-label="ถัดไป">&#8250;</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-5 text-center">
-        <div class="container" 
-        data-aos="fade-up"
-        data-aos-duration="2000" >
-            <br> <br>
-            <p class="fs-5 mb-0 mali-regular" >บางครั้ง การเติบโตอาจไม่ใช่แค่การได้ทำตามฝัน<br>แต่คือการเข้าใจหัวใจของตัวเอง</p>
-        </div>
         <br> <br>
 
-        <img src="images/iloveblueflag.jpg" class="col-6 col-md-3">
-    </footer>
+        <!-- COMICS: เลื่อนซ้าย-ขวา 8 เล่มในแถบเดียว -->
+        <section id="comics" class="blue-band py-5">
+            <div class="container text-center bai-jamjuree-regular">
+                <h2 class="fw-bold schoolbell-regular">COMICS</h2>
+                <p>มังงะจากสำนักพิมพ์ SHUEISHA มีทั้งหมด 8 เล่มจบ</p>
+                <br> <br>
+                <div class="position-relative px-3">
+                    <button class="comic-btn prev" id="prevBtn" aria-label="ก่อนหน้า">&#8249;</button>
+                    <div class="comic-track" id="comicTrack">
+                        <div class="comic-item"><img src="images/blue flag 1.jpg" alt="เล่ม 1">
+                            <div class="mt-2">เล่ม 1</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 2.jpg" alt="เล่ม 2">
+                            <div class="mt-2">เล่ม 2</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 3.jpg" alt="เล่ม 3">
+                            <div class="mt-2">เล่ม 3</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 4.jpg" alt="เล่ม 4">
+                            <div class="mt-2">เล่ม 4</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 5.jpg" alt="เล่ม 5">
+                            <div class="mt-2">เล่ม 5</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 6.jpg" alt="เล่ม 6">
+                            <div class="mt-2">เล่ม 6</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 7.jpg" alt="เล่ม 7">
+                            <div class="mt-2">เล่ม 7</div>
+                        </div>
+                        <div class="comic-item"><img src="images/blue flag 8.jpg" alt="เล่ม 8">
+                            <div class="mt-2">เล่ม 8</div>
+                        </div>
+
+                    </div>
+                    <button class="comic-btn next" id="nextBtn" aria-label="ถัดไป">&#8250;</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5 text-center">
+            <div class="container" data-aos="fade-up" data-aos-duration="2000">
+                <br> <br>
+                <p class="containerlead mx-auto mt-1 bai-jamjuree-regular good-text" style="max-width: 720px;"> 
+                    “ฉันยอมเลือกเส้นทางของตัวเองแม้ปลายทางจะเป็นความล้มเหลว<br> 
+                    ยังดีกว่าเลือกเส้นทางที่ถูกต้องเพียงเพราะเชื่อฟังคำของคนอื่น จนสุดท้ายต้องสูญเสียตัวตนที่แท้จริงของตัวเองไป”
+         </p>
+            </div>
+            <br> <br>
+
+            <img src="images/iloveblueflag.jpg" class="col-6 col-md-3">
+        </footer>
 
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // ปุ่มเลื่อน Comics ซ้าย-ขวา
-        const track = document.getElementById('comicTrack');
-        const step = () => track.querySelector('.comic-item').offsetWidth + 16;
-        document.getElementById('prevBtn').onclick = () => track.scrollBy({ left: -step() * 2 });
-        document.getElementById('nextBtn').onclick = () => track.scrollBy({ left: step() * 2 });
-        // ไฮไลต์เมนูตามส่วนที่กำลังดู
-        new bootstrap.ScrollSpy(document.body, { target: '.navbar', offset: 80 });
-    </script>
-    <script>
-        AOS.init();
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // ปุ่มเลื่อน Comics ซ้าย-ขวา
+            const track = document.getElementById('comicTrack');
+            const step = () => track.querySelector('.comic-item').offsetWidth + 16;
+            document.getElementById('prevBtn').onclick = () => track.scrollBy({ left: -step() * 2 });
+            document.getElementById('nextBtn').onclick = () => track.scrollBy({ left: step() * 2 });
+            // ไฮไลต์เมนูตามส่วนที่กำลังดู
+            new bootstrap.ScrollSpy(document.body, { target: '.navbar', offset: 80 });
+        </script>
+        <script>
+            AOS.init();
+        </script>
 
-<script src="js/loader.js"></script>
-</body>
+        <script src="js/loader.js"></script>
+    </body>
 
 
 </html>

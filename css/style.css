@@ -55,6 +55,7 @@ section {
     /* ครอปรูปให้เต็มกรอบ ไม่บีบให้เพี้ยน */
     object-position: center top;
 
+
 }
 
 .logo-title {
@@ -62,6 +63,26 @@ section {
     max-width: min(200px, 80%);
     height: auto;
 }
+
+
+
+/* หัวข้อ Introduction */
+.intro-heading {
+    text-align: center;
+}
+
+/* สำหรับหน้าจอโทรศัพท์ */
+@media (max-width: 576px) {
+    .intro-heading {
+        padding-left: 40px;
+        padding-right: 20px;
+        font-size: 1.15rem;
+        line-height: 1.7;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 .beach {
     display: block;
